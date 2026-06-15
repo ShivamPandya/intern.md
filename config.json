@@ -1,0 +1,32 @@
+{
+    "jira_base_url": "<YOUR_JIRA_URL>",
+    "jira_board_url": "<YOUR_JIRA_URL>/browse/",
+    "project_key": "<YOUR_PROJECT_KEY>",
+    "server_type": "server",
+    "verify_ssl": false,
+    "auth": {
+        "email_env_var": "JIRA_EMAIL",
+        "api_token_env_var": "JIRA_API_TOKEN"
+    },
+    "branch_prefix_map": {
+        "Story": "feature",
+        "Bug": "bugfix",
+        "Task": "task",
+        "Sub-task": "subtask",
+        "Epic": "epic"
+    },
+    "target_branch": "main",
+    "scrape_fields": [
+        "summary",
+        "description",
+        "acceptance_criteria",
+        "issue_type",
+        "priority",
+        "assignee",
+        "labels",
+        "components",
+        "story_points",
+        "subtasks",
+        "comments"
+    ]
+}
